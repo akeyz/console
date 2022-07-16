@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/akeyz/console/models"
 )
 
 // UpdateGroupHandlerFunc turns a function with the right signature into a update group handler

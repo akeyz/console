@@ -32,9 +32,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/operatorapi"
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi"
 	"github.com/minio/console/operatorapi/operations"
 	"github.com/stretchr/testify/assert"
 )

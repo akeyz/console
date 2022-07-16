@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/akeyz/console/models"
 )
 
 // ListNodesHandlerFunc turns a function with the right signature into a list nodes handler

@@ -20,15 +20,15 @@ import (
 	"context"
 	"net/http"
 
-	authApi "github.com/minio/console/restapi/operations/auth"
+	authApi "github.com/akeyz/console/restapi/operations/auth"
 
-	"github.com/minio/console/pkg/auth"
+	"github.com/akeyz/console/pkg/auth"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/restapi/operations"
+	accountApi "github.com/akeyz/console/restapi/operations/account"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	accountApi "github.com/minio/console/restapi/operations/account"
 )
 
 func registerAccountHandlers(api *operations.ConsoleAPI) {

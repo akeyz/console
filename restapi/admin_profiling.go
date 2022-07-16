@@ -21,11 +21,11 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/restapi/operations"
+	profileApi "github.com/akeyz/console/restapi/operations/profile"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	profileApi "github.com/minio/console/restapi/operations/profile"
 	"github.com/minio/madmin-go"
 )
 

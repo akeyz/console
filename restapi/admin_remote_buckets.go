@@ -26,11 +26,11 @@ import (
 
 	"github.com/minio/madmin-go"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/restapi/operations"
+	bucketApi "github.com/akeyz/console/restapi/operations/bucket"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
 	"github.com/minio/minio-go/v7/pkg/replication"
 )
 

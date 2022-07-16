@@ -25,12 +25,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/akeyz/console/pkg/utils"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/pkg/auth"
 	"github.com/go-openapi/errors"
 	"github.com/gorilla/websocket"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
 	"github.com/minio/madmin-go"
 )
 

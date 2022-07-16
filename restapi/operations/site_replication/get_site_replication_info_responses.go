@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/akeyz/console/models"
 )
 
 // GetSiteReplicationInfoOKCode is the HTTP code returned for type GetSiteReplicationInfoOK

@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/akeyz/console/models"
 )
 
 // GetUserPolicyHandlerFunc turns a function with the right signature into a get user policy handler

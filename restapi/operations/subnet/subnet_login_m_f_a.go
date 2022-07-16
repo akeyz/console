@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/akeyz/console/models"
 )
 
 // SubnetLoginMFAHandlerFunc turns a function with the right signature into a subnet login m f a handler

@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/akeyz/console/models"
 )
 
 // GetTierOKCode is the HTTP code returned for type GetTierOK

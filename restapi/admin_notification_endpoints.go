@@ -20,10 +20,10 @@ import (
 	"context"
 	"errors"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/restapi/operations"
+	configurationApi "github.com/akeyz/console/restapi/operations/configuration"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	configurationApi "github.com/minio/console/restapi/operations/configuration"
 )
 
 func registerAdminNotificationEndpointsHandlers(api *operations.ConsoleAPI) {

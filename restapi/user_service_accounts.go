@@ -23,14 +23,14 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/akeyz/console/pkg/utils"
 
-	userApi "github.com/minio/console/restapi/operations/user"
+	userApi "github.com/akeyz/console/restapi/operations/user"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/restapi/operations"
+	saApi "github.com/akeyz/console/restapi/operations/service_account"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	saApi "github.com/minio/console/restapi/operations/service_account"
 	"github.com/minio/madmin-go"
 	iampolicy "github.com/minio/pkg/iam/policy"
 )

@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/restapi/operations"
+	logApi "github.com/akeyz/console/restapi/operations/logging"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	logApi "github.com/minio/console/restapi/operations/logging"
 	iampolicy "github.com/minio/pkg/iam/policy"
 )
 

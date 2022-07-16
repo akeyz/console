@@ -29,10 +29,10 @@ import (
 	"testing"
 	"time"
 
+	consoleoauth2 "github.com/akeyz/console/pkg/auth/idp/oauth2"
+	"github.com/akeyz/console/restapi"
+	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/loads"
-	consoleoauth2 "github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/restapi"
-	"github.com/minio/console/restapi/operations"
 	"github.com/stretchr/testify/assert"
 )
 

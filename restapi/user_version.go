@@ -21,13 +21,13 @@ import (
 	"net/http"
 	"time"
 
-	xhttp "github.com/minio/console/pkg/http"
+	xhttp "github.com/akeyz/console/pkg/http"
 
+	"github.com/akeyz/console/models"
+	"github.com/akeyz/console/pkg/utils"
+	"github.com/akeyz/console/restapi/operations"
+	systemApi "github.com/akeyz/console/restapi/operations/system"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/console/restapi/operations"
-	systemApi "github.com/minio/console/restapi/operations/system"
 )
 
 func registerVersionHandlers(api *operations.ConsoleAPI) {

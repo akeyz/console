@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/akeyz/console/restapi"
+	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/restapi"
-	"github.com/minio/console/restapi/operations"
 )
 
 var token string
