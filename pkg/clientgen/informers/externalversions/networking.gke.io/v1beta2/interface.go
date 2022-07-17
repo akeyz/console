@@ -19,7 +19,7 @@ limitations under the License.
 package v1beta2
 
 import (
-	internalinterfaces "github.com/akeyz/console/pkg/clientgen/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/taozhuo-dev/console/pkg/clientgen/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

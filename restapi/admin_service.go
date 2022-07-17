@@ -20,11 +20,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
 
-	svcApi "github.com/akeyz/console/restapi/operations/service"
+	svcApi "github.com/taozhuo-dev/console/restapi/operations/service"
 )
 
 func registerServiceHandlers(api *operations.ConsoleAPI) {

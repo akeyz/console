@@ -24,8 +24,8 @@ import (
 
 	"github.com/go-openapi/swag"
 
-	"github.com/akeyz/console/models"
-	cfgApi "github.com/akeyz/console/restapi/operations/configuration"
+	"github.com/taozhuo-dev/console/models"
+	cfgApi "github.com/taozhuo-dev/console/restapi/operations/configuration"
 )
 
 func Test_addNotificationEndpoint(t *testing.T) {

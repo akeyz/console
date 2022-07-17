@@ -19,11 +19,11 @@ package restapi
 import (
 	"net/http"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	authApi "github.com/akeyz/console/restapi/operations/auth"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	authApi "github.com/taozhuo-dev/console/restapi/operations/auth"
 )
 
 func registerLogoutHandlers(api *operations.ConsoleAPI) {

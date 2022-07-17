@@ -26,13 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/akeyz/console/models"
 	"github.com/go-openapi/swag"
 	mc "github.com/minio/mc/cmd"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
 )
 
 var (

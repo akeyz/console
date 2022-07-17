@@ -24,9 +24,9 @@ import (
 
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/akeyz/console/pkg/utils"
+	"github.com/taozhuo-dev/console/pkg/utils"
 
-	xhttp "github.com/akeyz/console/pkg/http"
+	xhttp "github.com/taozhuo-dev/console/pkg/http"
 )
 
 // Version - represents the current version of audit log structure.

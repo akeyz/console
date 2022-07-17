@@ -19,15 +19,15 @@ package restapi
 import (
 	"context"
 
-	"github.com/akeyz/console/pkg/utils"
-	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/pkg/utils"
+	"github.com/taozhuo-dev/console/restapi/operations"
 
-	groupApi "github.com/akeyz/console/restapi/operations/group"
+	groupApi "github.com/taozhuo-dev/console/restapi/operations/group"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 func registerGroupsHandlers(api *operations.ConsoleAPI) {

@@ -32,11 +32,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/operatorapi"
 	"github.com/go-openapi/loads"
 	"github.com/minio/console/operatorapi/operations"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/operatorapi"
 )
 
 var (

@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/akeyz/console/models"
-	tieringApi "github.com/akeyz/console/restapi/operations/tiering"
 	"github.com/minio/madmin-go"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
+	tieringApi "github.com/taozhuo-dev/console/restapi/operations/tiering"
 )
 
 // assigning mock at runtime instead of compile time

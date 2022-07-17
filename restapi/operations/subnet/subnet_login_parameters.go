@@ -32,7 +32,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // NewSubnetLoginParams creates a new SubnetLoginParams object

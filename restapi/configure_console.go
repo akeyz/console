@@ -35,22 +35,22 @@ import (
 	"sync"
 	"time"
 
-	"github.com/akeyz/console/pkg/logger"
-	"github.com/akeyz/console/pkg/utils"
 	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/taozhuo-dev/console/pkg/logger"
+	"github.com/taozhuo-dev/console/pkg/utils"
 
 	"github.com/klauspost/compress/gzhttp"
 
-	portal_ui "github.com/akeyz/console/portal-ui"
 	"github.com/minio/pkg/env"
 	"github.com/minio/pkg/mimedb"
 	xnet "github.com/minio/pkg/net"
+	portal_ui "github.com/taozhuo-dev/console/portal-ui"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg/auth"
-	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg/auth"
+	"github.com/taozhuo-dev/console/restapi/operations"
 	"github.com/unrolled/secure"
 )
 

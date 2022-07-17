@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // LoginOauth2AuthNoContentCode is the HTTP code returned for type LoginOauth2AuthNoContent

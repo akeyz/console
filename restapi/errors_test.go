@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/akeyz/console/models"
 	"github.com/go-openapi/swag"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
 )
 
 func TestError(t *testing.T) {

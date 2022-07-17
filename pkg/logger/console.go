@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/akeyz/console/pkg/logger/color"
-	"github.com/akeyz/console/pkg/logger/message/log"
 	c "github.com/minio/pkg/console"
+	"github.com/taozhuo-dev/console/pkg/logger/color"
+	"github.com/taozhuo-dev/console/pkg/logger/message/log"
 )
 
 // ConsoleLoggerTgt is a stringified value to represent console logging

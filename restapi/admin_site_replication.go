@@ -19,11 +19,11 @@ package restapi
 import (
 	"context"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	siteRepApi "github.com/akeyz/console/restapi/operations/site_replication"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	siteRepApi "github.com/taozhuo-dev/console/restapi/operations/site_replication"
 )
 
 func registerSiteReplicationHandler(api *operations.ConsoleAPI) {

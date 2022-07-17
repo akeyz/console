@@ -21,8 +21,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/akeyz/console/cluster"
 	operatorClientset "github.com/minio/operator/pkg/client/clientset/versioned"
+	"github.com/taozhuo-dev/console/cluster"
 )
 
 type operatorClientTest struct {

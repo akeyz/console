@@ -21,12 +21,12 @@ import (
 	"encoding/base64"
 	"strconv"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	tieringApi "github.com/akeyz/console/restapi/operations/tiering"
 	"github.com/dustin/go-humanize"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	tieringApi "github.com/taozhuo-dev/console/restapi/operations/tiering"
 )
 
 func registerAdminTiersHandlers(api *operations.ConsoleAPI) {

@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/akeyz/console/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
 )
 
 const apiURL = "http://localhost:9090/api/v1/admin/site-replication"

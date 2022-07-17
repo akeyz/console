@@ -33,7 +33,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // NewUpdateGroupParams creates a new UpdateGroupParams object

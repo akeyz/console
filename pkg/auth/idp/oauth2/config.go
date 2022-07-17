@@ -21,8 +21,8 @@ package oauth2
 import (
 	"strings"
 
-	"github.com/akeyz/console/pkg/auth/utils"
 	"github.com/minio/pkg/env"
+	"github.com/taozhuo-dev/console/pkg/auth/utils"
 )
 
 // ProviderConfig - OpenID IDP Configuration for console.

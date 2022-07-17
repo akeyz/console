@@ -23,9 +23,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/akeyz/console/pkg/logger/config"
-	"github.com/akeyz/console/pkg/logger/target/http"
 	"github.com/minio/pkg/env"
+	"github.com/taozhuo-dev/console/pkg/logger/config"
+	"github.com/taozhuo-dev/console/pkg/logger/target/http"
 )
 
 // NewConfig - initialize new logger config.

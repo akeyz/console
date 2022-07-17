@@ -28,8 +28,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	xhttp "github.com/akeyz/console/pkg/http"
-	"github.com/akeyz/console/pkg/logger/target/types"
+	xhttp "github.com/taozhuo-dev/console/pkg/http"
+	"github.com/taozhuo-dev/console/pkg/logger/target/types"
 )
 
 // Timeout for the webhook http call

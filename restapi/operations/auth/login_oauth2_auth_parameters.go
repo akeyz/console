@@ -32,7 +32,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // NewLoginOauth2AuthParams creates a new LoginOauth2AuthParams object

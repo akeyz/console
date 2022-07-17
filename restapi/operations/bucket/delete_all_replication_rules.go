@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // DeleteAllReplicationRulesHandlerFunc turns a function with the right signature into a delete all replication rules handler

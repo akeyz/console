@@ -24,14 +24,14 @@ import (
 	"net/http"
 	"net/url"
 
-	xhttp "github.com/akeyz/console/pkg/http"
+	xhttp "github.com/taozhuo-dev/console/pkg/http"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg/subnet"
-	"github.com/akeyz/console/restapi/operations"
-	subnetApi "github.com/akeyz/console/restapi/operations/subnet"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg/subnet"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	subnetApi "github.com/taozhuo-dev/console/restapi/operations/subnet"
 )
 
 func registerSubnetHandlers(api *operations.ConsoleAPI) {

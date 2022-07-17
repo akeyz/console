@@ -22,10 +22,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg/auth/idp/oauth2"
-	"github.com/akeyz/console/pkg/auth/ldap"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg/auth/idp/oauth2"
+	"github.com/taozhuo-dev/console/pkg/auth/ldap"
 )
 
 func Test_getSessionResponse(t *testing.T) {

@@ -22,18 +22,18 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/akeyz/console/restapi"
 	"github.com/klauspost/compress/gzhttp"
+	"github.com/taozhuo-dev/console/restapi"
 	"github.com/unrolled/secure"
 
-	"github.com/akeyz/console/pkg/auth"
+	"github.com/taozhuo-dev/console/pkg/auth"
 
 	"github.com/go-openapi/swag"
 
 	"github.com/go-openapi/errors"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/operatorapi/operations"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/operatorapi/operations"
 )
 
 //go:generate swagger generate server --target ../../console --name Operator --spec ../swagger-operator.yml --server-package operatorapi --principal models.Principal --exclude-main

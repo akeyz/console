@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/akeyz/console/pkg/utils"
+	"github.com/taozhuo-dev/console/pkg/utils"
 
-	"github.com/akeyz/console/pkg/logger/message/audit"
+	"github.com/taozhuo-dev/console/pkg/logger/message/audit"
 )
 
 // ResponseWriter - is a wrapper to trap the http response status code.

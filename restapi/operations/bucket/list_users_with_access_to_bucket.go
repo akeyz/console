@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // ListUsersWithAccessToBucketHandlerFunc turns a function with the right signature into a list users with access to bucket handler

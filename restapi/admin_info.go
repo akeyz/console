@@ -27,12 +27,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	systemApi "github.com/akeyz/console/restapi/operations/system"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	systemApi "github.com/taozhuo-dev/console/restapi/operations/system"
 )
 
 func registerAdminInfoHandlers(api *operations.ConsoleAPI) {

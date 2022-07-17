@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/akeyz/console/pkg/utils"
+	"github.com/taozhuo-dev/console/pkg/utils"
 )
 
 func TestNewEntry(t *testing.T) {

@@ -25,13 +25,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/akeyz/console/pkg/utils"
+	"github.com/taozhuo-dev/console/pkg/utils"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg/auth"
 	"github.com/go-openapi/errors"
 	"github.com/gorilla/websocket"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg/auth"
 )
 
 var upgrader = websocket.Upgrader{

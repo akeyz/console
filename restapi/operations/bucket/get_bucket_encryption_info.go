@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // GetBucketEncryptionInfoHandlerFunc turns a function with the right signature into a get bucket encryption info handler

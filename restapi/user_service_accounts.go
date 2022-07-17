@@ -23,16 +23,16 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/akeyz/console/pkg/utils"
+	"github.com/taozhuo-dev/console/pkg/utils"
 
-	userApi "github.com/akeyz/console/restapi/operations/user"
+	userApi "github.com/taozhuo-dev/console/restapi/operations/user"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	saApi "github.com/akeyz/console/restapi/operations/service_account"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/minio/madmin-go"
 	iampolicy "github.com/minio/pkg/iam/policy"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	saApi "github.com/taozhuo-dev/console/restapi/operations/service_account"
 )
 
 func registerServiceAccountsHandlers(api *operations.ConsoleAPI) {

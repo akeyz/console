@@ -1,6 +1,6 @@
 # MinIO Console
 
-![build](https://github.com/akeyz/console/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
+![build](https://github.com/taozhuo-dev/console/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
 
 A graphical user interface for [MinIO](https://github.com/minio/minio)
 
@@ -33,14 +33,14 @@ A graphical user interface for [MinIO](https://github.com/minio/minio)
 
 | OS      | ARCH    | Binary                                                                                               |
 |:-------:|:-------:|:----------------------------------------------------------------------------------------------------:|
-| Linux   | amd64   | [linux-amd64](https://github.com/akeyz/console/releases/latest/download/console-linux-amd64)         |
-| Linux   | arm64   | [linux-arm64](https://github.com/akeyz/console/releases/latest/download/console-linux-arm64)         |
-| Linux   | ppc64le | [linux-ppc64le](https://github.com/akeyz/console/releases/latest/download/console-linux-ppc64le)     |
-| Linux   | s390x   | [linux-s390x](https://github.com/akeyz/console/releases/latest/download/console-linux-s390x)         |
-| Apple   | amd64   | [darwin-amd64](https://github.com/akeyz/console/releases/latest/download/console-darwin-amd64)       |
-| Windows | amd64   | [windows-amd64](https://github.com/akeyz/console/releases/latest/download/console-windows-amd64.exe) |
+| Linux   | amd64   | [linux-amd64](https://github.com/taozhuo-dev/console/releases/latest/download/console-linux-amd64)         |
+| Linux   | arm64   | [linux-arm64](https://github.com/taozhuo-dev/console/releases/latest/download/console-linux-arm64)         |
+| Linux   | ppc64le | [linux-ppc64le](https://github.com/taozhuo-dev/console/releases/latest/download/console-linux-ppc64le)     |
+| Linux   | s390x   | [linux-s390x](https://github.com/taozhuo-dev/console/releases/latest/download/console-linux-s390x)         |
+| Apple   | amd64   | [darwin-amd64](https://github.com/taozhuo-dev/console/releases/latest/download/console-darwin-amd64)       |
+| Windows | amd64   | [windows-amd64](https://github.com/taozhuo-dev/console/releases/latest/download/console-windows-amd64.exe) |
 
-You can also verify the binary with [minisign](https://jedisct1.github.io/minisign/) by downloading the corresponding [`.minisig`](https://github.com/akeyz/console/releases/latest) signature file. Then run:
+You can also verify the binary with [minisign](https://jedisct1.github.io/minisign/) by downloading the corresponding [`.minisig`](https://github.com/taozhuo-dev/console/releases/latest) signature file. Then run:
 ```
 minisign -Vm console-<OS>-<ARCH> -P RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav
 ```
@@ -57,7 +57,7 @@ docker pull minio/console
 > Minimum version required is go1.17
 
 ```
-go install github.com/akeyz/console/cmd/console@latest
+go install github.com/taozhuo-dev/console/cmd/console@latest
 ```
 
 ## Setup
@@ -219,4 +219,4 @@ export CONSOLE_MINIO_SERVER=https://localhost:9000
 You can verify that the apis work by doing the request on `localhost:9090/api/v1/...`
 
 # Contribute to console Project
-Please follow console [Contributor's Guide](https://github.com/akeyz/console/blob/master/CONTRIBUTING.md)
+Please follow console [Contributor's Guide](https://github.com/taozhuo-dev/console/blob/master/CONTRIBUTING.md)

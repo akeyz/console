@@ -22,8 +22,8 @@ import (
 	"context"
 	"time"
 
-	v1beta2 "github.com/akeyz/console/pkg/apis/networking.gke.io/v1beta2"
-	scheme "github.com/akeyz/console/pkg/clientgen/clientset/versioned/scheme"
+	v1beta2 "github.com/taozhuo-dev/console/pkg/apis/networking.gke.io/v1beta2"
+	scheme "github.com/taozhuo-dev/console/pkg/clientgen/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

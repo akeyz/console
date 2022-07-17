@@ -25,7 +25,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	xhttp "github.com/akeyz/console/pkg/http"
+	xhttp "github.com/taozhuo-dev/console/pkg/http"
 
 	"github.com/minio/madmin-go"
 	mc "github.com/minio/mc/cmd"

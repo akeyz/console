@@ -19,11 +19,11 @@ package auth
 import (
 	"context"
 
-	errors "github.com/akeyz/console/restapi"
+	errors "github.com/taozhuo-dev/console/restapi"
 
-	"github.com/akeyz/console/cluster"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	operatorClientset "github.com/minio/operator/pkg/client/clientset/versioned"
+	"github.com/taozhuo-dev/console/cluster"
 )
 
 // operatorCredentialsProvider is an struct to hold the JWT (service account token)

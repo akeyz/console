@@ -29,11 +29,6 @@ import (
 	"github.com/minio/minio-go/v7/pkg/sse"
 	xnet "github.com/minio/pkg/net"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg"
-	"github.com/akeyz/console/pkg/auth"
-	"github.com/akeyz/console/pkg/auth/ldap"
-	xjwt "github.com/akeyz/console/pkg/auth/token"
 	mc "github.com/minio/mc/cmd"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7"
@@ -41,6 +36,11 @@ import (
 	"github.com/minio/minio-go/v7/pkg/lifecycle"
 	"github.com/minio/minio-go/v7/pkg/notification"
 	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg"
+	"github.com/taozhuo-dev/console/pkg/auth"
+	"github.com/taozhuo-dev/console/pkg/auth/ldap"
+	xjwt "github.com/taozhuo-dev/console/pkg/auth/token"
 )
 
 func init() {

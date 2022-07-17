@@ -23,20 +23,20 @@ import (
 	"strconv"
 	"time"
 
-	policies "github.com/akeyz/console/restapi/policy"
 	"github.com/minio/madmin-go"
+	policies "github.com/taozhuo-dev/console/restapi/policy"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
 	"github.com/minio/pkg/bucket/policy/condition"
 
 	minioIAMPolicy "github.com/minio/pkg/iam/policy"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg/auth/idp/oauth2"
-	"github.com/akeyz/console/pkg/auth/ldap"
-	"github.com/akeyz/console/restapi/operations"
-	authApi "github.com/akeyz/console/restapi/operations/auth"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg/auth/idp/oauth2"
+	"github.com/taozhuo-dev/console/pkg/auth/ldap"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	authApi "github.com/taozhuo-dev/console/restapi/operations/auth"
 )
 
 type Conditions struct {

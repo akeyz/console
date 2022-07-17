@@ -293,7 +293,7 @@ const DateTimePickerWrapper = ({
         label=""
         className={clsName}
         disabled={disabled}
-        renderInput={(props) => (
+        renderInput={(props: any) => (
           <TextField id={id} variant="standard" {...props} disabled />
         )}
         ampm={false}

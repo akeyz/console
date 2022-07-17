@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/akeyz/console/pkg/clientgen/clientset/versioned"
-	internalinterfaces "github.com/akeyz/console/pkg/clientgen/informers/externalversions/internalinterfaces"
-	networkinggkeio "github.com/akeyz/console/pkg/clientgen/informers/externalversions/networking.gke.io"
+	versioned "github.com/taozhuo-dev/console/pkg/clientgen/clientset/versioned"
+	internalinterfaces "github.com/taozhuo-dev/console/pkg/clientgen/informers/externalversions/internalinterfaces"
+	networkinggkeio "github.com/taozhuo-dev/console/pkg/clientgen/informers/externalversions/networking.gke.io"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

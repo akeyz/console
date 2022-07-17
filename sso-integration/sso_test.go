@@ -29,11 +29,11 @@ import (
 	"testing"
 	"time"
 
-	consoleoauth2 "github.com/akeyz/console/pkg/auth/idp/oauth2"
-	"github.com/akeyz/console/restapi"
-	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/loads"
 	"github.com/stretchr/testify/assert"
+	consoleoauth2 "github.com/taozhuo-dev/console/pkg/auth/idp/oauth2"
+	"github.com/taozhuo-dev/console/restapi"
+	"github.com/taozhuo-dev/console/restapi/operations"
 )
 
 var token string

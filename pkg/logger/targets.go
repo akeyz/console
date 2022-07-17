@@ -20,8 +20,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/akeyz/console/pkg/logger/target/http"
-	"github.com/akeyz/console/pkg/logger/target/types"
+	"github.com/taozhuo-dev/console/pkg/logger/target/http"
+	"github.com/taozhuo-dev/console/pkg/logger/target/types"
 )
 
 // Target is the entity that we will receive

@@ -24,13 +24,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/pkg"
 	"github.com/minio/madmin-go"
 	mcCmd "github.com/minio/mc/cmd"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	iampolicy "github.com/minio/pkg/iam/policy"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/pkg"
 )
 
 const globalAppName = "MinIO Console"

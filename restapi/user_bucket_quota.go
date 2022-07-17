@@ -21,13 +21,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/akeyz/console/restapi/operations"
-	bucektApi "github.com/akeyz/console/restapi/operations/bucket"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	bucektApi "github.com/taozhuo-dev/console/restapi/operations/bucket"
 
 	"github.com/minio/madmin-go"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 func registerBucketQuotaHandlers(api *operations.ConsoleAPI) {

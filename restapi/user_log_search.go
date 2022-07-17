@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	logApi "github.com/akeyz/console/restapi/operations/logging"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
 	iampolicy "github.com/minio/pkg/iam/policy"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	logApi "github.com/taozhuo-dev/console/restapi/operations/logging"
 )
 
 func registerLogSearchHandlers(api *operations.ConsoleAPI) {

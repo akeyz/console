@@ -24,13 +24,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations/system"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations/system"
 
-	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/loads"
 	"github.com/minio/madmin-go"
+	"github.com/taozhuo-dev/console/restapi/operations"
 
 	asrt "github.com/stretchr/testify/assert"
 )

@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 func TestLogSearch(t *testing.T) {

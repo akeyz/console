@@ -25,9 +25,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/akeyz/console/models"
 	iampolicy "github.com/minio/pkg/iam/policy"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // assigning mock at runtime instead of compile time

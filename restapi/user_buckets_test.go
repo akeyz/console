@@ -24,7 +24,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/akeyz/console/models"
 	"github.com/go-openapi/swag"
 	"github.com/minio/madmin-go"
 	"github.com/minio/mc/pkg/probe"
@@ -32,6 +31,7 @@ import (
 	"github.com/minio/minio-go/v7/pkg/sse"
 	"github.com/minio/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // assigning mock at runtime instead of compile time

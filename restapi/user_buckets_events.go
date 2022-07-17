@@ -20,12 +20,12 @@ import (
 	"context"
 	"strings"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	bucketApi "github.com/akeyz/console/restapi/operations/bucket"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
 	"github.com/minio/minio-go/v7/pkg/notification"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	bucketApi "github.com/taozhuo-dev/console/restapi/operations/bucket"
 )
 
 func registerBucketEventsHandlers(api *operations.ConsoleAPI) {

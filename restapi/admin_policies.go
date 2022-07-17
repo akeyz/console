@@ -24,17 +24,17 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/akeyz/console/pkg/utils"
-	bucketApi "github.com/akeyz/console/restapi/operations/bucket"
-	policyApi "github.com/akeyz/console/restapi/operations/policy"
 	s3 "github.com/minio/minio-go/v7"
+	"github.com/taozhuo-dev/console/pkg/utils"
+	bucketApi "github.com/taozhuo-dev/console/restapi/operations/bucket"
+	policyApi "github.com/taozhuo-dev/console/restapi/operations/policy"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
 	"github.com/go-openapi/runtime/middleware"
 	iampolicy "github.com/minio/pkg/iam/policy"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
 
-	policies "github.com/akeyz/console/restapi/policy"
+	policies "github.com/taozhuo-dev/console/restapi/policy"
 )
 
 func registersPoliciesHandler(api *operations.ConsoleAPI) {

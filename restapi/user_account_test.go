@@ -22,9 +22,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/akeyz/console/models"
-	accountApi "github.com/akeyz/console/restapi/operations/account"
 	"github.com/stretchr/testify/assert"
+	"github.com/taozhuo-dev/console/models"
+	accountApi "github.com/taozhuo-dev/console/restapi/operations/account"
 )
 
 var minioChangePasswordMock func(ctx context.Context, accessKey, secretKey string) error

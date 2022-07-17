@@ -33,7 +33,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/akeyz/console/models"
+	"github.com/taozhuo-dev/console/models"
 )
 
 // NewPutObjectLegalHoldParams creates a new PutObjectLegalHoldParams object

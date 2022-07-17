@@ -22,19 +22,19 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/akeyz/console/pkg/utils"
+	"github.com/taozhuo-dev/console/pkg/utils"
 
 	"github.com/go-openapi/swag"
 
-	"github.com/akeyz/console/models"
-	"github.com/akeyz/console/restapi/operations"
-	accountApi "github.com/akeyz/console/restapi/operations/account"
-	bucketApi "github.com/akeyz/console/restapi/operations/bucket"
-	userApi "github.com/akeyz/console/restapi/operations/user"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/minio/madmin-go"
 	iampolicy "github.com/minio/pkg/iam/policy"
+	"github.com/taozhuo-dev/console/models"
+	"github.com/taozhuo-dev/console/restapi/operations"
+	accountApi "github.com/taozhuo-dev/console/restapi/operations/account"
+	bucketApi "github.com/taozhuo-dev/console/restapi/operations/bucket"
+	userApi "github.com/taozhuo-dev/console/restapi/operations/user"
 )
 
 // Policy evaluated constants
