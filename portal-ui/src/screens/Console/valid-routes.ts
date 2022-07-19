@@ -64,7 +64,7 @@ export const validRoutes = (
   const ldapIsEnabled = (features && features.includes("ldap-idp")) || false;
   let consoleMenus: IMenuItem[] = [
     {
-      name: "Buckets",
+      name: "桶",
       id: "buckets",
       component: NavLink,
       to: IAM_PAGES.BUCKETS,
@@ -73,7 +73,7 @@ export const validRoutes = (
       children: [],
     },
     {
-      name: "Identity",
+      name: "身份",
       id: "identity",
       icon: IdentityMenuIcon,
       children: [
@@ -84,7 +84,7 @@ export const validRoutes = (
           customPermissionFnc: () =>
             hasPermission(CONSOLE_UI_RESOURCE, [IAM_SCOPES.ADMIN_LIST_USERS]) ||
             hasPermission(S3_ALL_RESOURCES, [IAM_SCOPES.ADMIN_CREATE_USER]),
-          name: "Users",
+          name: "用户",
           icon: UsersMenuIcon,
           fsHidden: ldapIsEnabled,
         },
@@ -92,7 +92,7 @@ export const validRoutes = (
           component: NavLink,
           id: "groups",
           to: IAM_PAGES.GROUPS,
-          name: "Groups",
+          name: "组织",
           icon: GroupsMenuIcon,
           fsHidden: ldapIsEnabled,
         },
@@ -100,7 +100,7 @@ export const validRoutes = (
           component: NavLink,
           id: "serviceaccounts",
           to: IAM_PAGES.ACCOUNT,
-          name: "Service Accounts",
+          name: "系统账户",
           icon: AccountsMenuIcon,
           forceDisplay: true,
         },
