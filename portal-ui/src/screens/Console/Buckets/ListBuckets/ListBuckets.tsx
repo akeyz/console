@@ -365,7 +365,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                     title={"Buckets"}
                     help={
                       <Fragment>
-                        MinIO uses buckets to organize objects. A bucket is
+                        测试. A bucket is
                         similar to a folder or directory in a filesystem, where
                         each bucket can hold an arbitrary number of objects.
                         <SecureComponent

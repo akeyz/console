@@ -62,12 +62,9 @@ export const validRoutes = (
   operatorMode: boolean
 ) => {
   const ldapIsEnabled = (features && features.includes("ldap-idp")) || false;
-  console.log("--===----");
-  console.log(ldapIsEnabled);
-  console.log("--===----");
   let consoleMenus: IMenuItem[] = [
     {
-      name: "桶",
+      name: "区块",
       id: "buckets",
       component: NavLink,
       to: IAM_PAGES.BUCKETS,
@@ -110,7 +107,7 @@ export const validRoutes = (
       ],
     },
     {
-      name: "Access",
+      name: "权限",
       component: NavLink,
       id: "access",
       to: IAM_PAGES.POLICIES,
@@ -118,47 +115,47 @@ export const validRoutes = (
     },
 
     {
-      name: "Monitoring",
+      name: "监控",
       id: "tools",
       icon: MonitoringMenuIcon,
       children: [
         {
-          name: "Metrics",
+          name: "指标",
           id: "monitorMetrics",
           to: IAM_PAGES.DASHBOARD,
           icon: MetricsMenuIcon,
           component: NavLink,
         },
         {
-          name: "Logs ",
+          name: "日志",
           id: "monitorLogs",
           to: IAM_PAGES.TOOLS_LOGS,
           icon: LogsMenuIcon,
           component: NavLink,
         },
         {
-          name: "Audit",
+          name: "鉴权",
           id: "monitorAudit",
           to: IAM_PAGES.TOOLS_AUDITLOGS,
           icon: AuditLogsMenuIcon,
           component: NavLink,
         },
         {
-          name: "Trace",
+          name: "追溯",
           id: "monitorTrace",
           to: IAM_PAGES.TOOLS_TRACE,
           icon: TraceMenuIcon,
           component: NavLink,
         },
         {
-          name: "Watch",
+          name: "检查",
           id: "watch",
           component: NavLink,
           icon: WatchIcon,
           to: IAM_PAGES.TOOLS_WATCH,
         },
         {
-          name: "Drives",
+          name: "驱动",
           id: "monitorDrives",
           to: IAM_PAGES.TOOLS_HEAL,
           icon: DrivesMenuIcon,
@@ -169,52 +166,52 @@ export const validRoutes = (
     {
       component: NavLink,
       to: IAM_PAGES.NOTIFICATIONS_ENDPOINTS,
-      name: "Notifications",
+      name: "通知",
       icon: LambdaIcon,
       id: "lambda",
     },
+    // {
+    //   component: NavLink,
+    //   to: IAM_PAGES.TIERS,
+    //   name: "Tiers",
+    //   icon: TiersIcon,
+    //   id: "tiers",
+    // },
+    // {
+    //   component: NavLink,
+    //   to: IAM_PAGES.SITE_REPLICATION,
+    //   name: "站点复制",
+    //   icon: RecoverIcon,
+    //   id: "sitereplication",
+    // },
+    // {
+    //   component: NavLink,
+    //   to: IAM_PAGES.SETTINGS,
+    //   name: "配置",
+    //   id: "configurations",
+    //   icon: SettingsIcon,
+    // },
     {
-      component: NavLink,
-      to: IAM_PAGES.TIERS,
-      name: "Tiers",
-      icon: TiersIcon,
-      id: "tiers",
-    },
-    {
-      component: NavLink,
-      to: IAM_PAGES.SITE_REPLICATION,
-      name: "Site Replication",
-      icon: RecoverIcon,
-      id: "sitereplication",
-    },
-    {
-      component: NavLink,
-      to: IAM_PAGES.SETTINGS,
-      name: "Configurations",
-      id: "configurations",
-      icon: SettingsIcon,
-    },
-    {
-      name: "Support",
+      name: "支持",
       id: "support",
       icon: SupportMenuIcon,
       children: [
         {
-          name: "Register",
+          name: "注册",
           id: "register",
           component: NavLink,
           icon: RegisterMenuIcon,
           to: IAM_PAGES.REGISTER_SUPPORT,
         },
         {
-          name: "Health",
+          name: "健康",
           id: "diagnostics",
           component: NavLink,
           icon: HealthMenuIcon,
           to: IAM_PAGES.TOOLS_DIAGNOSTICS,
         },
         {
-          name: "Performance",
+          name: "性能",
           id: "performance",
           component: NavLink,
           icon: PerformanceMenuIcon,
@@ -236,7 +233,7 @@ export const validRoutes = (
         //   to: IAM_PAGES.CALL_HOME,
         // },
         {
-          name: "Inspect",
+          name: "检查",
           id: "inspectObjects",
           to: IAM_PAGES.SUPPORT_INSPECT,
           icon: InspectMenuIcon,
@@ -244,32 +241,32 @@ export const validRoutes = (
         },
       ],
     },
-    {
-      component: NavLink,
-      to: IAM_PAGES.LICENSE,
-      name: "License",
-      id: "license",
-      icon: LicenseIcon,
-      badge: LicenseBadge,
-      forceDisplay: true,
-    },
-    {
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.DOCUMENTATION,
-      name: "Documentation",
-      icon: DocumentationIcon,
-      forceDisplay: true,
-      onClick: (
-        e:
-          | React.MouseEvent<HTMLLIElement>
-          | React.MouseEvent<HTMLAnchorElement>
-          | React.MouseEvent<HTMLDivElement>
-      ) => {
-        e.preventDefault();
-        window.open("https://docs.min.io/?ref=con", "_blank");
-      },
-    },
+    // {
+    //   component: NavLink,
+    //   to: IAM_PAGES.LICENSE,
+    //   name: "License",
+    //   id: "license",
+    //   icon: LicenseIcon,
+    //   badge: LicenseBadge,
+    //   forceDisplay: true,
+    // },
+    // {
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.DOCUMENTATION,
+    //   name: "Documentation",
+    //   icon: DocumentationIcon,
+    //   forceDisplay: true,
+    //   onClick: (
+    //     e:
+    //       | React.MouseEvent<HTMLLIElement>
+    //       | React.MouseEvent<HTMLAnchorElement>
+    //       | React.MouseEvent<HTMLDivElement>
+    //   ) => {
+    //     e.preventDefault();
+    //     window.open("https://docs.min.io/?ref=con", "_blank");
+    //   },
+    // },
   ];
 
   let operatorMenus: IMenuItem[] = [
