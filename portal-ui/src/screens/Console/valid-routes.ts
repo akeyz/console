@@ -62,6 +62,9 @@ export const validRoutes = (
   operatorMode: boolean
 ) => {
   const ldapIsEnabled = (features && features.includes("ldap-idp")) || false;
+  console.log("--===----");
+  console.log(ldapIsEnabled);
+  console.log("--===----");
   let consoleMenus: IMenuItem[] = [
     {
       name: "桶",
