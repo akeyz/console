@@ -225,12 +225,12 @@ const BucketListItem = ({
                 <Grid container className={classes.bucketInfo}>
                   <Grid item xs={12} sm>
                     <Typography variant="body2">
-                      Created: {bucket.creation_date}
+                      创建: {bucket.creation_date}
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sm>
                     <Typography variant="body2">
-                      Access: {accessToStr(bucket)}
+                      权限: {accessToStr(bucket)}
                     </Typography>
                   </Grid>
                 </Grid>
@@ -248,9 +248,9 @@ const BucketListItem = ({
                   style={{ textDecoration: "none" }}
                 >
                   <RBIconButton
-                    tooltip={"Manage"}
+                    tooltip={"管理"}
                     onClick={() => {}}
-                    text={"Manage"}
+                    text={"管理"}
                     icon={<SettingsIcon />}
                     color={"primary"}
                     variant={"outlined"}
@@ -287,7 +287,7 @@ const BucketListItem = ({
           </Grid>
           <Grid item textAlign={"left"} className={classes.metric}>
             <ReportedUsageIcon />
-            <span className={classes.metricLabel}>Usage</span>
+            <span className={classes.metricLabel}>已使用</span>
             <div className={classes.metricText}>
               {usageScalar}
               <span className={classes.unit}>{usageUnit}</span>
@@ -302,7 +302,7 @@ const BucketListItem = ({
           </Grid>
           <Grid item textAlign={"left"} className={classes.metric}>
             <TotalObjectsIcon />
-            <span className={classes.metricLabel}>Objects</span>
+            <span className={classes.metricLabel}>对象</span>
             <div className={classes.metricText}>
               {bucket.objects ? prettyNumber(bucket.objects) : 0}
             </div>

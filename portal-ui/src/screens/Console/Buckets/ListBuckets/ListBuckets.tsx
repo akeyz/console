@@ -215,7 +215,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
           open={lifecycleModalOpen}
         />
       )}
-      {!obOnly && <PageHeader label={"Buckets"} />}
+      {!obOnly && <PageHeader label={"区块"} />}
       <PageLayout>
         <Grid item xs={12} className={classes.actionsTray} display="flex">
           {obOnly && (
@@ -375,7 +375,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                         >
                           <br />
                           <br />
-                          初始化,&nbsp;
+                          初始化&nbsp;
                           <AButton
                             onClick={() => {
                               navigate(IAM_PAGES.ADD_BUCKETS);
