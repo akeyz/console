@@ -102,7 +102,7 @@ const RewindEnable = ({
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 setRewindEnableButton(e.target.checked);
               }}
-              label={"Current Status"}
+              label={"当前状态"}
               indicatorLabels={["Enabled", "Disabled"]}
             />
           </Grid>

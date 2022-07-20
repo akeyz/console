@@ -79,7 +79,7 @@ const UsersHelpBox = () => {
         }}
       >
         <HelpIconFilled />
-        <div>Learn more about the Users feature</div>
+        <div>了解有关用户功能的更多信息</div>
       </Box>
 
       <Box
@@ -88,7 +88,7 @@ const UsersHelpBox = () => {
           flexFlow: "column",
         }}
       >
-        <FeatureItem icon={<UsersIcon />} description={`Create Users`} />
+        <FeatureItem icon={<UsersIcon />} description={`创建用户`} />
         <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
           A MinIO user consists of a unique access key (username) and
           corresponding secret key (password). Clients must authenticate their
@@ -96,7 +96,7 @@ const UsersHelpBox = () => {
           corresponding secret key (password) of an existing MinIO user.
           <br />
         </Box>
-        <FeatureItem icon={<GroupsIcon />} description={`Manage Groups`} />
+        <FeatureItem icon={<GroupsIcon />} description={`管理组群`} />
         <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
           Groups provide a simplified method for managing shared permissions
           among users with common access patterns and workloads.
@@ -108,7 +108,7 @@ const UsersHelpBox = () => {
         </Box>
         <FeatureItem
           icon={<ChangeAccessPolicyIcon />}
-          description={`Assign Policies`}
+          description={`分配策略`}
         />
         <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
           MinIO uses Policy-Based Access Control (PBAC) to define the authorized

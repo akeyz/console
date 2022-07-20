@@ -93,7 +93,7 @@ const BrowserHandler = () => {
           errorProps={{ disabled: true }}
         >
           <SearchBox
-            placeholder={"Start typing to filter objects in the bucket"}
+            placeholder={"开始输入,以筛选区块中的对象"}
             onChange={(value) => {
               dispatch(setSearchObjects(value));
             }}
@@ -103,7 +103,7 @@ const BrowserHandler = () => {
       ) : (
         <Fragment>
           <SearchBox
-            placeholder={`Start typing to filter versions of ${versionedFile}`}
+            placeholder={`开始输入，以筛选版本 ${versionedFile}`}
             onChange={(value) => {
               dispatch(setSearchVersions(value));
             }}

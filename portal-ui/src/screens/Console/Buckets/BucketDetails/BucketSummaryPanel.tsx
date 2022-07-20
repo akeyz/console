@@ -430,7 +430,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                   <EditablePropertyItem
                     iamScopes={[IAM_SCOPES.S3_PUT_BUCKET_POLICY]}
                     resourceName={bucketName}
-                    property={"Access Policy:"}
+                    property={"访问策略:"}
                     value={accessPolicy.toLowerCase()}
                     onEdit={() => {
                       setAccessPolicyScreenOpen(true);
@@ -448,7 +448,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                       IAM_SCOPES.S3_PUT_BUCKET_ENCRYPTION_CONFIGURATION,
                     ]}
                     resourceName={bucketName}
-                    property={"Encryption:"}
+                    property={"加密:"}
                     value={encryptionEnabled ? "Enabled" : "Disabled"}
                     onEdit={() => {
                       setEnableEncryptionScreenOpen(true);
@@ -462,7 +462,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                   resource={bucketName}
                 >
                   <LabelValuePair
-                    label={"Replication:"}
+                    label={"复制:"}
                     value={
                       <LabelWithIcon
                         icon={
@@ -483,7 +483,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                   resource={bucketName}
                 >
                   <LabelValuePair
-                    label={"Object Locking:"}
+                    label={"对象锁:"}
                     value={
                       <LabelWithIcon
                         icon={
@@ -491,7 +491,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                         }
                         label={
                           <label className={classes.textMuted}>
-                            {hasObjectLocking ? "Enabled" : "Disabled"}
+                            {hasObjectLocking ? "开启" : "关闭"}
                           </label>
                         }
                       />
@@ -500,14 +500,14 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                 </SecureComponent>
                 <Box className={classes.spacerTop}>
                   <LabelValuePair
-                    label={"Tags:"}
+                    label={"标签:"}
                     value={<BucketTags bucketName={bucketName} />}
                   />
                 </Box>
                 <EditablePropertyItem
                   iamScopes={[IAM_SCOPES.ADMIN_SET_BUCKET_QUOTA]}
                   resourceName={bucketName}
-                  property={"Quota:"}
+                  property={"定额:"}
                   value={quotaEnabled ? "Enabled" : "Disabled"}
                   onEdit={setBucketQuota}
                   isLoading={loadingQuota}
@@ -551,8 +551,8 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                   <EditablePropertyItem
                     iamScopes={[IAM_SCOPES.S3_PUT_BUCKET_VERSIONING]}
                     resourceName={bucketName}
-                    property={"Current Status:"}
-                    value={isVersioned ? "Versioned" : "Unversioned (Default)"}
+                    property={"当前状态:"}
+                    value={isVersioned ? "已版本" : "未纳入"}
                     onEdit={setBucketVersioning}
                     isLoading={loadingVersioning}
                   />
@@ -589,7 +589,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
                   <EditablePropertyItem
                     iamScopes={[IAM_SCOPES.ADMIN_SET_BUCKET_QUOTA]}
                     resourceName={bucketName}
-                    property={"Retention:"}
+                    property={"预留:"}
                     value={retentionEnabled ? "Enabled" : "Disabled"}
                     onEdit={() => {
                       setRetentionConfigOpen(true);

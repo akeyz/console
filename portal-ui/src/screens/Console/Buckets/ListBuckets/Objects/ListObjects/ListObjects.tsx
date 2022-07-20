@@ -1252,24 +1252,24 @@ const ListObjects = () => {
   const multiActionButtons = [
     {
       action: downloadSelected,
-      label: "Download",
+      label: "下载",
       disabled: selectedObjects.length === 0,
       icon: <DownloadIcon />,
-      tooltip: "Download Selected",
+      tooltip: "下载已选择",
     },
     {
       action: openShare,
-      label: "Share",
+      label: "共享",
       disabled: selectedObjects.length !== 1 || !canShareFile,
       icon: <ShareIcon />,
-      tooltip: "Share Selected File",
+      tooltip: "共享所选文件",
     },
     {
       action: openPreview,
       label: "Preview",
       disabled: selectedObjects.length !== 1 || !canPreviewFile,
       icon: <PreviewIcon />,
-      tooltip: "Preview Selected File",
+      tooltip: "预览选定文件",
     },
     {
       action: () => {
@@ -1388,8 +1388,8 @@ const ListObjects = () => {
                 <div className={classes.actionsSection}>
                   <RBIconButton
                     id={"rewind-objects-list"}
-                    tooltip={"Rewind Bucket"}
-                    text={"Rewind"}
+                    tooltip={"返回区块"}
+                    text={"返回"}
                     icon={
                       <Badge
                         badgeContent=" "
@@ -1421,8 +1421,8 @@ const ListObjects = () => {
                   />
                   <RBIconButton
                     id={"refresh-objects-list"}
-                    tooltip={"Reload List"}
-                    text={"Refresh"}
+                    tooltip={"重新加载列表"}
+                    text={"刷新"}
                     icon={<RefreshIcon />}
                     color="primary"
                     variant={"outlined"}
@@ -1512,7 +1512,7 @@ const ListObjects = () => {
                               name={"deleted_objects"}
                               id={"showDeletedObjects"}
                               value={"deleted_on"}
-                              label={"Show deleted objects"}
+                              label={"显示已删除的对象"}
                               onChange={setDeletedAction}
                               checked={showDeleted}
                               overrideLabelClasses={classes.labelStyle}
@@ -1540,8 +1540,8 @@ const ListObjects = () => {
                     }`}
                     selectedItems={selectedObjects}
                     onSelect={selectListObjects}
-                    customEmptyMessage={`This location is empty${
-                      !rewindEnabled ? ", please try uploading a new file" : ""
+                    customEmptyMessage={`此路径为空${
+                      !rewindEnabled ? ", 请尝试上传新文件" : ""
                     }`}
                     sortConfig={{
                       currentSort: currentSortField,
@@ -1549,13 +1549,12 @@ const ListObjects = () => {
                       triggerSort: sortChange,
                     }}
                     onSelectAll={selectAllItems}
-                    rowStyle={({ index }) => {
-                      if (payload[index]?.delete_flag) {
-                        return "deleted";
-                      }
-
-                      return "";
-                    }}
+                    // rowStyle={({ index }) => {
+                    //   if (payload[index]?.delete_flag) {
+                    //     return "已删除";
+                    //   }
+                    //   return "";
+                    // }}
                     parentClassName={classes.parentWrapper}
                   />
                 </Grid>
@@ -1576,7 +1575,7 @@ const ListObjects = () => {
                 {selectedObjects.length > 0 && (
                   <ActionsListSection
                     items={multiActionButtons}
-                    title={"Selected Objects:"}
+                    title={"已选择的对象:"}
                   />
                 )}
                 {selectedInternalPaths !== null && (

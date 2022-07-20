@@ -250,7 +250,7 @@ const BrowserBreadcrumbs = ({
               }}
               variant={"outlined"}
             >
-              Create new path
+              创建新路径
             </Button>
           </Tooltip>
         )}

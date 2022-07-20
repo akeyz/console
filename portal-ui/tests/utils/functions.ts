@@ -98,7 +98,7 @@ export const namedManageButtonFor = (name) => {
     .withText(name)
     .parent(4)
     .find("button:enabled")
-    .withText("Manage");
+    .withText("管理");
 };
 
 export const manageButtonFor = (modifier) => {
@@ -126,7 +126,7 @@ export const namedTestBucketBrowseButtonFor = (name) => {
     .withText(name)
     .parent(4)
     .find("button:enabled")
-    .withText("Browse");
+    .withText("浏览");
 };
 
 export const testBucketBrowseButtonFor = (modifier) => {

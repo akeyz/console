@@ -26,12 +26,12 @@ export const closeAlertButton = Selector(
 );
 
 export const uploadButton = Selector("span")
-  .withAttribute("aria-label", "Upload Files")
+  .withAttribute("aria-label", "上传文件")
   .child("button:enabled");
 export const createPolicyButton =
-  Selector("button:enabled").withText("Create Policy");
-export const saveButton = Selector("button:enabled").withText("Save");
-export const deleteButton = Selector("button:enabled").withExactText("Delete");
+  Selector("button:enabled").withText("创建策略");
+export const saveButton = Selector("button:enabled").withText("保存");
+export const deleteButton = Selector("button:enabled").withExactText("删除");
 export const deleteIconButton = Selector("button:enabled").withAttribute(
   "aria-label",
   "Delete"
@@ -42,43 +42,43 @@ export const deleteIconButtonAlt = Selector("button:enabled").withAttribute(
 );
 export const configureBucketButton = Selector(
   'span[class*="MuiIconButton-root"]'
-).withAttribute("aria-label", "Configure Bucket");
+).withAttribute("aria-label", "配置区块");
 export const addNotifTargetButton = Selector("button:enabled").withText(
   "Add Notification Target"
 );
 export const createTierButton =
-  Selector("button:enabled").withText("Create Tier");
+  Selector("button:enabled").withText("创建层");
 export const createBucketButton =
-  Selector("button:enabled").withText("Create Bucket");
+  Selector("button:enabled").withText("创建区块");
 export const deleteBucketButton =
-  Selector("button:enabled").withText("Delete Bucket");
+  Selector("button:enabled").withText("删除区块");
 export const createUserButton =
-  Selector("button:enabled").withText("Create User");
+  Selector("button:enabled").withText("创建用户");
 export const createGroupButton =
-  Selector("button:enabled").withText("Create Group");
+  Selector("button:enabled").withText("创建群组");
 export const deleteGroupIconButton = Selector("span")
   .withAttribute("aria-label", "Delete Group")
   .find("button:enabled");
 export const editMembersButton =
-  Selector("button:enabled").withText("Edit Members");
+  Selector("button:enabled").withText("修改成员");
 export const addAccessRuleButton =
-  Selector("button:enabled").withText("Add Access Rule");
+  Selector("button:enabled").withText("添加访问规则");
 export const startDiagnosticButton =
-  Selector("button:enabled").withText("Start Diagnostic");
+  Selector("button:enabled").withText("启动诊断");
 export const startNewDiagnosticButton = Selector("#start-new-diagnostic");
-export const downloadButton = Selector("button:enabled").withText("Download");
-export const startButton = Selector("button:enabled").withText("Start");
-export const stopButton = Selector("button:enabled").withText("Stop");
+export const downloadButton = Selector("button:enabled").withText("下载");
+export const startButton = Selector("button:enabled").withText("开始");
+export const stopButton = Selector("button:enabled").withText("停止");
 export const assignPoliciesButton =
-  Selector("button:enabled").withText("Assign Policies");
+  Selector("button:enabled").withText("分配策略");
 //----------------------------------------------------
 // Links
 //----------------------------------------------------
-export const logsLink = Selector("a").withText("Logs");
-export const watchLink = Selector("a").withText("Watch");
-export const traceLink = Selector("a").withText("Trace");
-export const healLink = Selector("a").withText("Heal");
-export const diagnosticsLink = Selector("a").withText("Diagnostics");
+export const logsLink = Selector("a").withText("日志");
+export const watchLink = Selector("a").withText("查看");
+export const traceLink = Selector("a").withText("跟踪");
+export const healLink = Selector("a").withText("健康");
+export const diagnosticsLink = Selector("a").withText("诊断");
 
 //----------------------------------------------------
 // Switches
@@ -95,13 +95,13 @@ export const bucketsAccessInput = Selector(
 );
 export const bucketsAccessReadOnlyInput = Selector(
   'li[class*="MuiMenuItem-root"]'
-).withText("readonly");
+).withText("只读");
 export const bucketsAccessWriteOnlyInput = Selector(
   'li[class*="MuiMenuItem-root"]'
-).withText("writeonly");
+).withText("只写");
 export const bucketsAccessReadWriteInput = Selector(
   'li[class*="MuiMenuItem-root"]'
-).withText("readwrite");
+).withText("读写");
 export const uploadInput = Selector("input").withAttribute("type", "file");
 export const createPolicyName = Selector("#policy-name");
 export const createPolicyTextfield = Selector(".w-tc-editor-text");
@@ -140,7 +140,7 @@ export const groupStatusText = Selector("#group-status");
 export const table = Selector(".ReactVirtualized__Table");
 export const bucketsTableDisabled = Selector("#object-list-wrapper")
   .find(".MuiPaper-root")
-  .withText("This location is empty, please try uploading a new file");
+  .withText("当前路径为空，请尝试上载新文件");
 export const createGroupUserTable = Selector(
   ".MuiDialog-container .ReactVirtualized__Table"
 );
@@ -149,7 +149,7 @@ export const createGroupUserTable = Selector(
 // Bucket page vertical tabs
 //----------------------------------------------------
 export const bucketAccessRulesTab =
-  Selector(".MuiTab-root").withText("Access Rules");
+  Selector(".MuiTab-root").withText("访问规则");
 
 //----------------------------------------------------
 // Settings window
@@ -213,4 +213,4 @@ export const nodeSelector = Selector('[data-test-id="node-selector"]');
 //----------------------------------------------------
 // User Details
 //----------------------------------------------------
-export const userPolicies = Selector(".MuiTab-root").withText("Policies");
+export const userPolicies = Selector(".MuiTab-root").withText("政策");
