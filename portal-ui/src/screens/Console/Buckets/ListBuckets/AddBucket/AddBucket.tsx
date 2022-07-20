@@ -156,39 +156,32 @@ const AddBucket = ({ classes }: IsetProps) => {
 
   return (
     <Fragment>
-      <PageHeader label={<BackLink to={"/buckets"} label={"Buckets"} />} />
+      <PageHeader label={<BackLink to={"/buckets"} label={"区块"} />} />
       <PageLayout>
         <FormLayout
-          title={"Create Bucket"}
+          title={"创建区块"}
           icon={<BucketsIcon />}
           helpbox={
             <HelpBox
               iconComponent={<BucketsIcon />}
-              title={"Buckets"}
+              title={"区块"}
               help={
                 <Fragment>
-                  MinIO uses buckets to organize objects. A bucket is similar to
+                  {/* MinIO uses buckets to organize objects. A bucket is similar to
                   a folder or directory in a filesystem, where each bucket can
-                  hold an arbitrary number of objects.
+                  hold an arbitrary number of objects. */}
+                  MinIO使用区块来组织对象。区块类似于文件系统中的文件夹或目录，其中每个存储桶可以
+                  容纳任意数量的对象。
                   <br />
                   <br />
-                  <b>Versioning</b> allows to keep multiple versions of the same
-                  object under the same key.
+                  <b>版本控制</b> 允许保留同一版本的多个版本，同一键下的对象.
                   <br />
                   <br />
-                  <b>Object Locking</b> prevents objects from being deleted.
-                  Required to support retention and legal hold. Can only be
-                  enabled at bucket creation.
+                  <b>对象锁</b> 可防止删除对象。需要支持保留和合法持有。
+                   只能是在区块创建时启用。
                   <br />
                   <br />
-                  <b>Quota</b> limits the amount of data in the bucket.
-                  <br />
-                  <br />
-                  <b>Retention</b> imposes rules to prevent object deletion for
-                  a period of time.
-                  <br />
-                  <br />
-                  <b>Bucket Naming Rules</b>
+                  <b>区块命名规则</b>
                   <Box
                     sx={{
                       display: "flex",
@@ -229,41 +222,37 @@ const AddBucket = ({ classes }: IsetProps) => {
                   >
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names must be between 3 (min) and 63 (max)
-                        characters long.
+                      名称必须介于3（最小）和63（最大）之间字符长
                       </div>
                     </Box>
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names can consist only of lowercase letters,
-                        numbers, dots (.), and hyphens (-).
+                      名称只能由小写字母组成，数字、点（.），和连字符（-）
                       </div>
                     </Box>
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names must not contain two adjacent periods.
+                      名称不能包含两个相邻的句点
                       </div>
                     </Box>
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names must not be formatted as an IP address (for
-                        example, 192.168.5.4).
+                      名称不得格式化为IP地址（对于例如，192.168.5.4）
                       </div>
                     </Box>
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names must not start with the prefix xn--.
+                      名称不能以前缀xn--开头
                       </div>
                     </Box>
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names must not end with the suffix -s3alias. This
-                        suffix is reserved for access point alias names.
+                      名称不能以后缀-s3alias结尾。这后缀是为接入点别名保留的
                       </div>
                     </Box>
                     <Box className="step-row">
                       <div className="step-text">
-                        Bucket names must be unique within a partition.
+                        名称在分区内必须是唯一的
                       </div>
                     </Box>
                   </Box>
@@ -285,21 +274,21 @@ const AddBucket = ({ classes }: IsetProps) => {
                 <AddBucketName />
               </Grid>
               <Grid item xs={12}>
-                <SectionTitle>Features</SectionTitle>
+                <SectionTitle>特征</SectionTitle>
                 {!distributedSetup && (
                   <Fragment>
                     <div className={classes.error}>
-                      These features are unavailable in a single-disk setup.
+                      这些功能在单磁盘设置中不可用
                       <br />
-                      Please deploy a server in{" "}
+                      请部署服务器 {" "}
                       <a
                         href="https://docs.min.io/minio/baremetal/installation/deploy-minio-distributed.html?ref=con"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Distributed Mode
+                        分布式模式
                       </a>{" "}
-                      to use these features.
+                      使用这些功能
                     </div>
                     <br />
                     <br />
@@ -312,8 +301,8 @@ const AddBucket = ({ classes }: IsetProps) => {
                   <Fragment>
                     <br />
                     <div className={classes.alertVersioning}>
-                      <InfoIcon /> Versioning setting cannot be changed as
-                      cluster replication is enabled for this site.
+                      <InfoIcon /> 版本控制设置不能更改,
+                      已为此站点启用群集复制
                     </div>
                     <br />
                   </Fragment>
@@ -326,7 +315,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                   onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                     dispatch(setVersioning(event.target.checked));
                   }}
-                  label={"Versioning"}
+                  label={"版本控制"}
                   disabled={
                     !distributedSetup ||
                     lockingEnabled ||
@@ -347,7 +336,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                       dispatch(setVersioning(true));
                     }
                   }}
-                  label={"Object Locking"}
+                  label={"对象锁"}
                 />
               </Grid>
 
@@ -360,7 +349,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                   onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                     dispatch(setQuota(event.target.checked));
                   }}
-                  label={"Quota"}
+                  label={"配额"}
                   disabled={!distributedSetup}
                 />
               </Grid>
@@ -374,7 +363,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                         dispatch(setQuotaSize(e.target.value));
                       }}
-                      label="Capacity"
+                      label="容量"
                       value={quotaSize}
                       required
                       min="1"
@@ -408,7 +397,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                     onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                       dispatch(setRetention(event.target.checked));
                     }}
-                    label={"Retention"}
+                    label={"保持"}
                   />
                 </Grid>
               )}
@@ -419,13 +408,13 @@ const AddBucket = ({ classes }: IsetProps) => {
                       currentSelection={retentionMode}
                       id="retention_mode"
                       name="retention_mode"
-                      label="Mode"
+                      label="模式"
                       onChange={(e: React.ChangeEvent<{ value: unknown }>) => {
                         dispatch(setRetentionMode(e.target.value as string));
                       }}
                       selectorOptions={[
-                        { value: "compliance", label: "Compliance" },
-                        { value: "governance", label: "Governance" },
+                        { value: "compliance", label: "遵从" },
+                        { value: "governance", label: "统治" },
                       ]}
                     />
                   </Grid>
@@ -437,7 +426,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                         dispatch(setRetentionValidity(e.target.valueAsNumber));
                       }}
-                      label="Validity"
+                      label="有效性"
                       value={String(retentionValidity)}
                       required
                       overlayObject={
@@ -448,8 +437,8 @@ const AddBucket = ({ classes }: IsetProps) => {
                           }}
                           unitSelected={retentionUnit}
                           unitsList={[
-                            { value: "days", label: "Days" },
-                            { value: "years", label: "Years" },
+                            { value: "days", label: "天" },
+                            { value: "years", label: "年" },
                           ]}
                           disabled={false}
                         />
@@ -466,7 +455,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                 className={classes.clearButton}
                 onClick={resForm}
               >
-                Clear
+                清除
               </Button>
               <Button
                 type="submit"
@@ -474,7 +463,7 @@ const AddBucket = ({ classes }: IsetProps) => {
                 color="primary"
                 disabled={addLoading || invalidFields.length > 0}
               >
-                Create Bucket
+                创建区块
               </Button>
             </Grid>
             {addLoading && (

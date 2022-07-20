@@ -152,7 +152,7 @@ const PreviewFile = ({
             >
               <iframe
                 src={path}
-                title="File Preview"
+                title="文件预览"
                 allowTransparency
                 className={`${classes.iframeContainer} ${
                   isFullscreen ? "fullHeight" : objectType

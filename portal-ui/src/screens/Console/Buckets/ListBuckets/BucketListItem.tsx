@@ -263,9 +263,9 @@ const BucketListItem = ({
               style={{ textDecoration: "none" }}
             >
               <RBIconButton
-                tooltip={"Browse"}
+                tooltip={"浏览"}
                 onClick={() => {}}
-                text={"Browse"}
+                text={"浏览"}
                 icon={<ArrowRightIcon />}
                 color={"primary"}
                 variant={"contained"}

@@ -32,7 +32,7 @@ const AddBucketName = () => {
       onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
         dispatch(setName(event.target.value));
       }}
-      label="Bucket Name"
+      label="区块名称"
       value={bucketName}
     />
   );

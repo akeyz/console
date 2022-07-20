@@ -37,7 +37,7 @@ const PreviewFileModal = ({
     <Fragment>
       <ModalWrapper
         modalOpen={open}
-        title={`Preview - ${object?.name}`}
+        title={`预览 - ${object?.name}`}
         onClose={onClosePreview}
         wideLimit={false}
         titleIcon={<ObjectPreviewIcon />}

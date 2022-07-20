@@ -315,24 +315,25 @@ const AddBulkReplicationModal = ({
       onClose={() => {
         closeModalAndRefresh(false);
       }}
-      title="Set Multiple Bucket Replication"
+      title="设置多个区块复制"
     >
       <GenericWizard
         loadingStep={addLoading || externalLoading}
         wizardSteps={[
           {
-            label: "Remote Configuration",
+            label: "远程配置",
             componentRender: (
               <Fragment>
                 <Grid item xs={12}>
                   <PredefinedList
-                    label="Local Buckets to replicate"
+                    label="要复制的本地存储区块"
                     content={bucketsToAlter.join(", ")}
                   />
                 </Grid>
-                <h4>Remote Endpoint Configuration</h4>
+                <h4>远程端点配置</h4>
                 <span className={classes.descriptionText}>
                   Please avoid the use of root credentials for this feature
+                  请避免root用户对此功能使用
                 </span>
                 <br />
                 <br />
@@ -343,7 +344,7 @@ const AddBulkReplicationModal = ({
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                       setAccessKey(e.target.value);
                     }}
-                    label="Access Key"
+                    label="访问密钥"
                     value={accessKey}
                   />
                 </Grid>
@@ -354,7 +355,7 @@ const AddBulkReplicationModal = ({
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                       setSecretKey(e.target.value);
                     }}
-                    label="Secret Key"
+                    label="密钥"
                     value={secretKey}
                   />
                 </Grid>
@@ -366,7 +367,7 @@ const AddBulkReplicationModal = ({
                       setTargetURL(e.target.value);
                     }}
                     placeholder="play.min.io:9000"
-                    label="Target URL"
+                    label="目标网址"
                     value={targetURL}
                   />
                 </Grid>
@@ -375,7 +376,7 @@ const AddBulkReplicationModal = ({
                     checked={useTLS}
                     id="useTLS"
                     name="useTLS"
-                    label="Use TLS"
+                    label="使用TLS"
                     onChange={(e) => {
                       setUseTLS(e.target.checked);
                     }}
@@ -389,7 +390,7 @@ const AddBulkReplicationModal = ({
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                       setRegion(e.target.value);
                     }}
-                    label="Region"
+                    label="区域"
                     value={region}
                   />
                 </Grid>
@@ -400,7 +401,7 @@ const AddBulkReplicationModal = ({
                     onChange={(e: SelectChangeEvent<string>) => {
                       setReplicationMode(e.target.value as string);
                     }}
-                    label="Replication Mode"
+                    label="复制模式"
                     value={replicationMode}
                     options={[
                       { label: "Asynchronous", value: "async" },
@@ -419,7 +420,7 @@ const AddBulkReplicationModal = ({
                           setBandwidthScalar(e.target.value as string);
                         }
                       }}
-                      label="Bandwidth"
+                      label="带宽"
                       value={bandwidthScalar}
                       min="0"
                       pattern={"[0-9]*"}
@@ -444,7 +445,7 @@ const AddBulkReplicationModal = ({
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                       setHealthCheck(e.target.value as string);
                     }}
-                    label="Health Check Duration"
+                    label="健康检查持续时间"
                     value={healthCheck}
                   />
                 </Grid>
@@ -453,20 +454,19 @@ const AddBulkReplicationModal = ({
             buttons: [
               {
                 type: "custom",
-                label: "Next",
+                label: "下一步",
                 enabled: !externalLoading,
                 action: retrieveRemoteBuckets,
               },
             ],
           },
           {
-            label: "Bucket Assignments",
+            label: "区块分配",
             componentRender: (
               <Fragment>
-                <h3>Remote Bucket Assignments</h3>
+                <h3>远程存储桶分配</h3>
                 <span className={classes.descriptionText}>
-                  Please select / type the desired remote bucket were you want
-                  the local data to be replicated.
+                请选择/键入所需的远程存储区块要复制的本地数据
                 </span>
                 <div className={classes.remoteBucketList}>
                   {bucketsToAlter.map((bucketName: string, index: number) => {
@@ -495,12 +495,12 @@ const AddBulkReplicationModal = ({
             buttons: [
               {
                 type: "back",
-                label: "Back",
+                label: "返回",
                 enabled: true,
               },
               {
                 type: "next",
-                label: "Create",
+                label: "创建",
                 enabled: !addLoading,
                 action: addRecord,
               },

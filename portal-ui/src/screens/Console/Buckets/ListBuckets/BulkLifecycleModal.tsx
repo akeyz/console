@@ -218,28 +218,28 @@ const AddBulkReplicationModal = ({
       onClose={() => {
         closeModalAndRefresh(false);
       }}
-      title="Set Lifecycle to multiple buckets"
+      title="将生命周期设置为多个区块"
     >
       <GenericWizard
         loadingStep={addLoading || loadingTiers}
         wizardSteps={[
           {
-            label: "Lifecycle Configuration",
+            label: "生命周期配置",
             componentRender: (
               <Fragment>
                 <Grid item xs={12}>
                   <PredefinedList
-                    label="Local Buckets to replicate"
+                    label="要复制的本地存区块"
                     content={buckets.join(", ")}
                   />
                 </Grid>
-                <h4>Remote Endpoint Configuration</h4>
+                <h4>远程端点配置</h4>
                 <Grid container>
                   <Grid item xs={12} className={classes.formScrollable}>
                     <Grid item xs={12} className={classes.formFieldRow}>
                       <fieldset className={classes.fieldGroup}>
                         <legend className={classes.descriptionText}>
-                          Lifecycle Configuration
+                         生命周期配置
                         </legend>
 
                         <Grid item xs={12}>
@@ -247,15 +247,15 @@ const AddBulkReplicationModal = ({
                             currentSelection={ilmType}
                             id="quota_type"
                             name="quota_type"
-                            label="ILM Rule"
+                            label="ILM规则"
                             onChange={(
                               e: React.ChangeEvent<{ value: unknown }>
                             ) => {
                               setIlmType(e.target.value as string);
                             }}
                             selectorOptions={[
-                              { value: "expiry", label: "Expiry" },
-                              { value: "transition", label: "Transition" },
+                              { value: "expiry", label: "过期" },
+                              { value: "transition", label: "过渡" },
                             ]}
                           />
                         </Grid>
@@ -271,7 +271,7 @@ const AddBulkReplicationModal = ({
                                 ) => {
                                   setExpiryDays(e.target.value);
                                 }}
-                                label="Expiry Days"
+                                label="过期天数"
                                 value={expiryDays}
                                 min="0"
                               />
@@ -286,7 +286,7 @@ const AddBulkReplicationModal = ({
                                 ) => {
                                   setNCExpirationDays(e.target.value);
                                 }}
-                                label="Non-current Expiration Days"
+                                label="非当前到期日"
                                 value={NCExpirationDays}
                                 min="0"
                               />
@@ -304,7 +304,7 @@ const AddBulkReplicationModal = ({
                                 ) => {
                                   setTransitionDays(e.target.value);
                                 }}
-                                label="Transition Days"
+                                label="过渡天数"
                                 value={transitionDays}
                                 min="0"
                               />
@@ -319,7 +319,7 @@ const AddBulkReplicationModal = ({
                                 ) => {
                                   setNCTransitionDays(e.target.value);
                                 }}
-                                label="Non-current Transition Days"
+                                label="非当前过渡日"
                                 value={NCTransitionDays}
                                 min="0"
                               />
@@ -333,14 +333,14 @@ const AddBulkReplicationModal = ({
                                 ) => {
                                   setNCTransitionSC(e.target.value);
                                 }}
-                                placeholder="Set Non-current Version Transition Storage Class"
-                                label="Non-current Version Transition Storage Class"
+                                placeholder="设置非当前版本转换存储类"
+                                label="非当前版本转换存储类"
                                 value={NCTransitionSC}
                               />
                             </Grid>
                             <Grid item xs={12} className={classes.formFieldRow}>
                               <SelectWrapper
-                                label="Storage Class"
+                                label="存储类"
                                 id="storage_class"
                                 name="storage_class"
                                 value={storageClass}
@@ -357,7 +357,7 @@ const AddBulkReplicationModal = ({
                     <Grid item xs={12} className={classes.formFieldRow}>
                       <fieldset className={classes.fieldGroup}>
                         <legend className={classes.descriptionText}>
-                          File Configuration
+                          文件配置
                         </legend>
 
                         <Grid item xs={12}>
@@ -369,20 +369,20 @@ const AddBulkReplicationModal = ({
                             ) => {
                               setPrefix(e.target.value);
                             }}
-                            label="Prefix"
+                            label="前缀"
                             value={prefix}
                           />
                         </Grid>
                         <Grid item xs={12}>
                           <QueryMultiSelector
                             name="tags"
-                            label="Tags"
+                            label="标签"
                             elements={tags}
                             onChange={(vl: string) => {
                               setTags(vl);
                             }}
-                            keyPlaceholder="Tag Key"
-                            valuePlaceholder="Tag Value"
+                            keyPlaceholder="标签键"
+                            valuePlaceholder="标签值"
                             withBorder
                           />
                         </Grid>
@@ -397,7 +397,7 @@ const AddBulkReplicationModal = ({
                             ) => {
                               setExpiredObjectDM(event.target.checked);
                             }}
-                            label={"Expired Object Delete Marker"}
+                            label={"过期对象删除标记"}
                           />
                         </Grid>
                       </fieldset>
@@ -409,14 +409,14 @@ const AddBulkReplicationModal = ({
             buttons: [
               {
                 type: "custom",
-                label: "Create Rules",
+                label: "创建规则",
                 enabled: !loadingTiers && !addLoading && isFormValid,
                 action: createLifecycleRules,
               },
             ],
           },
           {
-            label: "Results",
+            label: "结果",
             componentRender: (
               <Fragment>
                 <h3>Multi Bucket lifecycle Assignments Results</h3>
@@ -438,7 +438,7 @@ const AddBulkReplicationModal = ({
             buttons: [
               {
                 type: "custom",
-                label: "Done",
+                label: "执行",
                 enabled: !addLoading,
                 action: () => closeModalAndRefresh(true),
               },

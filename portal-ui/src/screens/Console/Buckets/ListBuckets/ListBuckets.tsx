@@ -227,7 +227,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
           )}
           <SearchBox
             onChange={setFilterBuckets}
-            placeholder="Search Buckets"
+            placeholder="搜索区块"
             overrideClass={classes.searchField}
             value={filterBuckets}
           />
@@ -243,7 +243,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
               <Fragment>
                 <RBIconButton
                   tooltip={
-                    bulkSelect ? "Unselect Buckets" : "Select Multiple Buckets"
+                    bulkSelect ? "未选择区块" : "选择批量区块"
                   }
                   onClick={() => {
                     setBulkSelect(!bulkSelect);
@@ -259,8 +259,8 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                   <RBIconButton
                     tooltip={
                       selectedBuckets.length === filteredRecords.length
-                        ? "Unselect All Buckets"
-                        : "Select All Buckets"
+                        ? "未选择全部区块"
+                        : "选择全部区块"
                     }
                     onClick={selectAllBuckets}
                     text={""}
@@ -271,7 +271,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                 )}
 
                 <RBIconButton
-                  tooltip={"Set Lifecycle"}
+                  tooltip={"设置生命周期"}
                   onClick={() => {
                     setLifecycleModalOpen(true);
                   }}
@@ -283,7 +283,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                 />
 
                 <RBIconButton
-                  tooltip={"Set Replication"}
+                  tooltip={"设置复制"}
                   onClick={() => {
                     setReplicationModalOpen(true);
                   }}
@@ -297,7 +297,7 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
             )}
 
             <RBIconButton
-              tooltip={"Refresh"}
+              tooltip={"刷新"}
               onClick={() => {
                 setLoading(true);
               }}
@@ -309,11 +309,11 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
 
             {!obOnly && (
               <RBIconButton
-                tooltip={"Create Bucket"}
+                tooltip={"创建区块"}
                 onClick={() => {
                   navigate(IAM_PAGES.ADD_BUCKETS);
                 }}
-                text={"Create Bucket"}
+                text={"创建区块"}
                 icon={<AddIcon />}
                 color={"primary"}
                 variant={"contained"}
@@ -342,10 +342,10 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                 <Grid item xs={8}>
                   <HelpBox
                     iconComponent={<BucketsIcon />}
-                    title={"No Results"}
+                    title={"没有结果"}
                     help={
                       <Fragment>
-                        No buckets match the filtering condition
+                        没有区块符合查询条件
                       </Fragment>
                     }
                   />
@@ -362,25 +362,26 @@ const ListBuckets = ({ classes }: IListBucketsProps) => {
                 <Grid item xs={8}>
                   <HelpBox
                     iconComponent={<BucketsIcon />}
-                    title={"Buckets"}
+                    title={"区块"}
                     help={
                       <Fragment>
-                        测试. A bucket is
+                        区块类似于文件系统中的文件夹或目录，其中每个区块可以容纳任意数量的对象
+                        {/* A bucket is
                         similar to a folder or directory in a filesystem, where
-                        each bucket can hold an arbitrary number of objects.
+                        each bucket can hold an arbitrary number of objects. */}
                         <SecureComponent
                           scopes={[IAM_SCOPES.S3_CREATE_BUCKET]}
                           resource={CONSOLE_UI_RESOURCE}
                         >
                           <br />
                           <br />
-                          To get started,&nbsp;
+                          初始化,&nbsp;
                           <AButton
                             onClick={() => {
                               navigate(IAM_PAGES.ADD_BUCKETS);
                             }}
                           >
-                            Create a Bucket.
+                            创建区块.
                           </AButton>
                         </SecureComponent>
                       </Fragment>

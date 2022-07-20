@@ -56,8 +56,8 @@ const DeleteBucket = ({
 
   return (
     <ConfirmDialog
-      title={`Delete Bucket`}
-      confirmText={"Delete"}
+      title={`删除区块`}
+      confirmText={"删除"}
       isOpen={deleteOpen}
       titleIcon={<ConfirmDeleteIcon />}
       isLoading={deleteLoading}
@@ -65,8 +65,8 @@ const DeleteBucket = ({
       onClose={onClose}
       confirmationContent={
         <DialogContentText>
-          Are you sure you want to delete bucket <b>{selectedBucket}</b>? <br />
-          A bucket can only be deleted if it's empty.
+          你确定要删除区块吗? <b>{selectedBucket}</b>? <br />
+          区块只有在为空时才能删除
         </DialogContentText>
       }
     />

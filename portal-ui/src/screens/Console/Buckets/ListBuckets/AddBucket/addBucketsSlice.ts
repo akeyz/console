@@ -70,8 +70,8 @@ export const addBucketsSlice = createSlice({
       state.versioningEnabled = action.payload;
       if (!state.versioningEnabled || !state.retentionEnabled) {
         state.retentionEnabled = false;
-        state.retentionMode = "compliance";
-        state.retentionUnit = "days";
+        state.retentionMode = "遵从";
+        state.retentionUnit = "天";
         state.retentionValidity = 180;
       }
     },
@@ -114,8 +114,8 @@ export const addBucketsSlice = createSlice({
       state.retentionEnabled = action.payload;
       if (!state.versioningEnabled || !state.retentionEnabled) {
         state.retentionEnabled = false;
-        state.retentionMode = "compliance";
-        state.retentionUnit = "days";
+        state.retentionMode = "遵从";
+        state.retentionUnit = "天";
         state.retentionValidity = 180;
       }
 

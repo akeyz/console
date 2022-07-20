@@ -79,12 +79,12 @@ const UploadFilesButton = ({
     <Fragment>
       <RBIconButton
         id={"upload-main"}
-        tooltip={"Upload Files"}
+        tooltip={"上传文件"}
         aria-controls={`upload-main-menu`}
         aria-haspopup="true"
         aria-expanded={openUploadMenu ? "true" : undefined}
         onClick={handleClick}
-        text={"Upload"}
+        text={"上传"}
         icon={<UploadIcon />}
         color="primary"
         variant={"contained"}
@@ -116,7 +116,7 @@ const UploadFilesButton = ({
           <ListItemIcon className={classes.listUploadIcons}>
             <UploadIcon />
           </ListItemIcon>
-          <ListItemText>Upload File</ListItemText>
+          <ListItemText>文件上传</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => {
@@ -127,7 +127,7 @@ const UploadFilesButton = ({
           <ListItemIcon className={classes.listUploadIcons}>
             <UploadFolderIcon />
           </ListItemIcon>
-          <ListItemText>Upload Folder</ListItemText>
+          <ListItemText>上传文件夹</ListItemText>
         </MenuItem>
       </Menu>
     </Fragment>
