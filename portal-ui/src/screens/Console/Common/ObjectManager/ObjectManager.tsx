@@ -114,7 +114,7 @@ const ObjectManager = ({ classes }: IObjectManager) => {
               </IconButton>
             </Tooltip>
           </div>
-          <div className={classes.title}>Downloads / Uploads</div>
+          <div className={classes.title}>下载 / 上传</div>
           <div className={classes.actionsContainer}>
             {objects.map((object, key) => (
               <ObjectHandled

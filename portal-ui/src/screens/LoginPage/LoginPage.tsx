@@ -306,7 +306,7 @@ const Login = () => {
             id="sso-login"
             className={classes.submit}
           >
-            Login with SSO
+            SSO登录
           </Button>
         </React.Fragment>
       );
@@ -351,7 +351,7 @@ const Login = () => {
                 className={classes.submit}
                 disabled={jwt === "" || loginSending}
               >
-                Login
+                登录
               </Button>
             </Grid>
             <Grid item xs={12} className={classes.linearPredef}>
@@ -371,9 +371,9 @@ const Login = () => {
             <React.Fragment>
               <div>
                 <p style={{ color: "#000", textAlign: "center" }}>
-                  An error has occurred
+                  发生错误
                   <br />
-                  The backend cannot be reached.
+                  无法访问后端
                 </p>
               </div>
               <div>
@@ -438,7 +438,7 @@ const Login = () => {
                 font: "normal normal normal 20px/24px Lato",
               }}
             >
-              Multicloud Object Storage
+              分布式存储
             </Box>
           </Grid>
           <Grid
@@ -466,7 +466,7 @@ const Login = () => {
                   font: "normal normal normal 12px/15px Lato",
                 }}
               >
-                Learn more about {isOperator ? "OPERATOR CONSOLE" : "CONSOLE"}
+                了解更多信息，关于 {isOperator ? "操作员控制台" : "控制台"}
               </a>
               <a
                 href={hyperLink}
@@ -491,7 +491,7 @@ const Login = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <DocumentationIcon /> Documentation
+                <DocumentationIcon /> 文档
               </a>
               <span className={classes.separator}>|</span>
               <a
@@ -507,7 +507,7 @@ const Login = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <SupportMenuIcon /> Support
+                <SupportMenuIcon /> 支持
               </a>
               <span className={classes.separator}>|</span>
               <a
@@ -515,7 +515,7 @@ const Login = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <DownloadIcon /> Download
+                <DownloadIcon /> 下载
               </a>
             </div>
             <div className={clsx(classes.miniLinks, classes.miniLogo)}>
@@ -530,7 +530,7 @@ const Login = () => {
                   marginBottom: 20,
                 }}
               >
-                <MinIOTierIconXs /> <b>Latest Version:</b>&nbsp;
+                <MinIOTierIconXs /> <b>最新版本:</b>&nbsp;
                 {!loadingVersion && latestMinIOVersion !== "" && (
                   <React.Fragment>{latestMinIOVersion}</React.Fragment>
                 )}

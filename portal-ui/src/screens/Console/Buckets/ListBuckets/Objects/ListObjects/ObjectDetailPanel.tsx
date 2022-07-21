@@ -652,23 +652,23 @@ const ObjectDetailPanel = ({
             </SecureComponent>
           </Grid>
           <Grid item xs={12} className={classes.headerForSection}>
-            <span>Object Info</span>
+            <span>对象信息</span>
             <ObjectInfoIcon />
           </Grid>
           <Box className={classes.detailContainer}>
-            <strong>Name:</strong>
+            <strong>名称:</strong>
             <br />
             <div style={{ overflowWrap: "break-word" }}>{objectName}</div>
           </Box>
           {selectedVersion !== "" && (
             <Box className={classes.detailContainer}>
-              <strong>Version ID:</strong>
+              <strong>版本 ID:</strong>
               <br />
               {selectedVersion}
             </Box>
           )}
           <Box className={classes.detailContainer}>
-            <strong>Size:</strong>
+            <strong>大小:</strong>
             <br />
             {niceBytes(actualInfo.size || "0")}
           </Box>
@@ -684,18 +684,18 @@ const ObjectDetailPanel = ({
             )}
           {selectedVersion === "" && (
             <Box className={classes.detailContainer}>
-              <strong>Last Modified:</strong>
+              <strong>最近更新:</strong>
               <br />
               {calculateLastModifyTime(actualInfo.last_modified)}
             </Box>
           )}
           <Box className={classes.detailContainer}>
-            <strong>ETAG:</strong>
+            <strong>E标签:</strong>
             <br />
             {actualInfo.etag || "N/A"}
           </Box>
           <Box className={classes.detailContainer}>
-            <strong>Tags:</strong>
+            <strong>标签:</strong>
             <br />
             {tagKeys.length === 0
               ? "N/A"
@@ -714,7 +714,7 @@ const ObjectDetailPanel = ({
               resource={bucketName}
             >
               <Fragment>
-                <strong>Legal Hold:</strong>
+                <strong>合法持有:</strong>
                 <br />
                 {actualInfo.legal_hold_status ? "On" : "Off"}
               </Fragment>
@@ -726,7 +726,7 @@ const ObjectDetailPanel = ({
               resource={bucketName}
             >
               <Fragment>
-                <strong>Retention Policy:</strong>
+                <strong>保留策略:</strong>
                 <br />
                 <span className={classes.capitalizeFirst}>
                   {actualInfo.version_id && actualInfo.version_id !== "null" ? (
@@ -747,7 +747,7 @@ const ObjectDetailPanel = ({
             </SecureComponent>
           </Box>
           <Grid item xs={12} className={classes.headerForSection}>
-            <span>Metadata</span>
+            <span>元数据</span>
             <MetadataIcon />
           </Grid>
           <Box className={classes.detailContainer}>

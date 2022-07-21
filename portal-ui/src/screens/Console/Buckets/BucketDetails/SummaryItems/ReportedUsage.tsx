@@ -49,7 +49,7 @@ const ReportedUsage = ({ bucketSize }: { bucketSize: string }) => {
             fontWeight: 600,
           }}
         >
-          Reported Usage:
+          已使用情况:
         </label>
         <label>{niceBytes(bucketSize)}</label>
       </Box>

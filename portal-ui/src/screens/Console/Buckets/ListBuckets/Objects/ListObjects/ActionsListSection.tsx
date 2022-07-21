@@ -48,7 +48,7 @@ const ActionsListSection = ({
     <Fragment>
       <div className={classes.titleLabel}>{title}</div>
       <ul className={classes.objectActions}>
-        <li>Actions:</li>
+        <li>操作:</li>
         {items.map((actionItem, index) => {
           return (
             <li key={`action-element-${index.toString()}`}>

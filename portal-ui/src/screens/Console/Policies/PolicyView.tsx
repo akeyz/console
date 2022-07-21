@@ -157,7 +157,7 @@ const PolicyView = ({
                 }}
               >
                 <Box sx={rowGridStyle}>
-                  <Box className="label">Actions:</Box>
+                  <Box className="label"></Box>
                   <Box>
                     {stmt.Action &&
                       stmt.Action.map((act, actIndex) => (

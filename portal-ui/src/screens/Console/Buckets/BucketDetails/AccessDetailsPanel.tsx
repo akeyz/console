@@ -154,7 +154,7 @@ const AccessDetails = () => {
 
   return (
     <Fragment>
-      <PanelTitle>Access Audit</PanelTitle>
+      <PanelTitle>访问审核</PanelTitle>
       <Tabs
         value={curTab}
         onChange={(e: React.ChangeEvent<{}>, newValue: number) => {

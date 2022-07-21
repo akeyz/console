@@ -206,7 +206,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
         />
       )}
       <PageHeader
-        label={<BackLink to={"/buckets"} label={"Buckets"} />}
+        label={<BackLink to={"/buckets"} label={"区块"} />}
         actions={
           <Fragment>
             <Tooltip title={"Browse Bucket"}>
@@ -240,7 +240,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
                 scopes={[IAM_SCOPES.S3_GET_BUCKET_POLICY]}
                 resource={bucketName}
               >
-                <span style={{ fontSize: 15 }}>Access: </span>
+                <span style={{ fontSize: 15 }}>权限: </span>
                 <span
                   className={classes.capitalize}
                   style={{ fontWeight: 600, fontSize: 15 }}
@@ -260,11 +260,11 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
                   errorProps={{ disabled: true }}
                 >
                   <RBIconButton
-                    tooltip={"Delete Bucket"}
+                    tooltip={"删除区块"}
                     onClick={() => {
                       setDeleteOpen(true);
                     }}
-                    text={"Delete Bucket"}
+                    text={"删除区块"}
                     icon={<TrashIcon />}
                     color={"secondary"}
                     variant={"outlined"}
@@ -274,7 +274,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
                   onClick={() => {
                     dispatch(setBucketDetailsLoad(true));
                   }}
-                  text={`Refresh`}
+                  text={`刷新`}
                   icon={<RefreshIcon />}
                   color={"primary"}
                 />
@@ -318,7 +318,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
           >
             {{
               tabConfig: {
-                label: "Summary",
+                label: "总览",
                 value: "summary",
                 component: Link,
                 to: getRoutePath("summary"),
@@ -326,7 +326,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
             }}
             {{
               tabConfig: {
-                label: "Events",
+                label: "事件",
                 value: "events",
                 component: Link,
                 disabled: !hasPermission(bucketName, [
@@ -338,7 +338,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
             }}
             {{
               tabConfig: {
-                label: "Replication",
+                label: "复制",
                 value: "replication",
                 component: Link,
                 disabled:
@@ -354,7 +354,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
             }}
             {{
               tabConfig: {
-                label: "Lifecycle",
+                label: "生命周期",
                 value: "lifecycle",
                 component: Link,
                 disabled:
@@ -368,7 +368,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
             }}
             {{
               tabConfig: {
-                label: "Access Audit",
+                label: "访问审核",
                 value: "access",
                 component: Link,
                 disabled: !hasPermission(bucketName, [
@@ -381,7 +381,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
             }}
             {{
               tabConfig: {
-                label: "Access Rules",
+                label: "访问规则",
                 value: "prefix",
                 component: Link,
                 disabled: !hasPermission(bucketName, [

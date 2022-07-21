@@ -536,7 +536,7 @@ const BucketSummary = ({ classes }: IBucketSummaryProps) => {
             resource={bucketName}
           >
             <Grid item xs={12}>
-              <SectionTitle>Versioning</SectionTitle>
+              <SectionTitle>版本</SectionTitle>
 
               <Box
                 sx={{

@@ -74,7 +74,7 @@ const ReportedUsage = ({
     >
       <Box>
         <div className="usage-label">
-          <span>Reported Usage</span>
+          <span>已使用情况</span>
         </div>
 
         <Tooltip title={`${usageValue} Bytes`}>

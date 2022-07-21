@@ -320,13 +320,13 @@ const FileVersionItem = ({
           </Grid>
           <Grid item xs={12} className={classes.collapsableInfo}>
             <span className={classes.versionData}>
-              <strong>Last modified:</strong>{" "}
+              <strong>最近更新:</strong>{" "}
               <reactMoment.default>
                 {versionInfo.last_modified}
               </reactMoment.default>
             </span>
             <span className={classes.versionData}>
-              <strong>Size:</strong> {niceBytes(versionInfo.size || "0")}
+              <strong>大小:</strong> {niceBytes(versionInfo.size || "0")}
             </span>
           </Grid>
         </Grid>

@@ -44,20 +44,20 @@ export const displayDeleteFlag = (state: boolean) => {
 
 export const listModeColumns = [
   {
-    label: "Name",
+    label: "名称",
     elementKey: "name",
     renderFunction: displayFileIconName,
     enableSort: true,
   },
   {
-    label: "Last Modified",
+    label: "最近更新",
     elementKey: "last_modified",
     renderFunction: displayParsedDate,
     renderFullObject: true,
     enableSort: true,
   },
   {
-    label: "Size",
+    label: "大小",
     elementKey: "size",
     renderFunction: displayNiceBytes,
     renderFullObject: true,
@@ -69,20 +69,20 @@ export const listModeColumns = [
 
 export const rewindModeColumns = [
   {
-    label: "Name",
+    label: "名称",
     elementKey: "name",
     renderFunction: displayFileIconName,
     enableSort: true,
   },
   {
-    label: "Object Date",
+    label: "对象数据",
     elementKey: "last_modified",
     renderFunction: displayParsedDate,
     renderFullObject: true,
     enableSort: true,
   },
   {
-    label: "Size",
+    label: "大小",
     elementKey: "size",
     renderFunction: displayNiceBytes,
     renderFullObject: true,

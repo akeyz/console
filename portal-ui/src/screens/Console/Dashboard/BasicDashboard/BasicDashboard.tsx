@@ -214,7 +214,7 @@ const BasicDashboard = ({ usage }: IDashboardProps) => {
           >
             <BoxItem>
               <CounterCard
-                label={"Buckets"}
+                label={"区块"}
                 icon={<BucketsIcon />}
                 counterValue={usage ? representationNumber(usage.buckets) : 0}
                 actions={

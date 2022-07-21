@@ -223,7 +223,7 @@ const BrowserBreadcrumbs = ({
           <div className={classes.additionalOptions}>{additionalOptions}</div>
         </Grid>
         {!hidePathButton && (
-          <Tooltip title={"Choose or create a new path"}>
+          <Tooltip title={"选择或创建新路径"}>
             <Button
               id={"new-path"}
               onClick={() => {

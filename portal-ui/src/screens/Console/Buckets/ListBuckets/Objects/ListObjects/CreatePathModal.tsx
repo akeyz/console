@@ -134,13 +134,13 @@ const CreatePathModal = ({
     <React.Fragment>
       <ModalWrapper
         modalOpen={modalOpen}
-        title="Choose or create a new path"
+        title="选择或创建新路径"
         onClose={onClose}
         titleIcon={<CreateNewPathIcon />}
       >
         <Grid container>
           <Grid item xs={12} className={classes.formFieldRow}>
-            <strong>Current Path:</strong> <br />
+            <strong>当前路径:</strong> <br />
             <div
               style={{
                 textOverflow: "ellipsis",
@@ -157,10 +157,10 @@ const CreatePathModal = ({
           <Grid item xs={12} className={classes.formFieldRow}>
             <InputBoxWrapper
               value={pathUrl}
-              label={"New Folder Path"}
+              label={"新文件夹路径"}
               id={"folderPath"}
               name={"folderPath"}
-              placeholder={"Enter the new Folder Path"}
+              placeholder={"输入新路径"}
               onChange={inputChange}
               onKeyPress={keyPressed}
               required

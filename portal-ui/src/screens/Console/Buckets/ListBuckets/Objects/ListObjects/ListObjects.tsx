@@ -420,7 +420,7 @@ const ListObjects = () => {
       setLoadingMessage(
         <Fragment>
           <Typography component="h3">
-            This operation is taking longer than expected... (
+          此操作花费的时间比预期的长... (
             {Math.ceil(timeDelta / 1000)}s)
           </Typography>
         </Fragment>
@@ -428,7 +428,7 @@ const ListObjects = () => {
     } else if (timeDelta / 1000 >= 3) {
       setLoadingMessage(
         <Typography component="h3">
-          This operation is taking longer than expected...
+          此操作花费的时间比预期的长...
         </Typography>
       );
     }
@@ -1275,13 +1275,13 @@ const ListObjects = () => {
       action: () => {
         setDeleteMultipleOpen(true);
       },
-      label: "Delete",
+      label: "删除",
       icon: <DeleteIcon />,
       disabled:
         !hasPermission(bucketName, [IAM_SCOPES.S3_DELETE_OBJECT]) ||
         selectedObjects.length === 0 ||
         !displayDeleteObject,
-      tooltip: "Delete Selected Files",
+      tooltip: "删除选择的文件",
     },
   ];
 
@@ -1352,11 +1352,11 @@ const ListObjects = () => {
               <Fragment>
                 <Grid item xs={12} className={classes.bucketDetails}>
                   <span className={classes.detailsSpacer}>
-                    Created:&nbsp;&nbsp;&nbsp;
+                    创建:&nbsp;&nbsp;&nbsp;
                     <strong>{bucketInfo?.creation_date || ""}</strong>
                   </span>
                   <span className={classes.detailsSpacer}>
-                    Access:&nbsp;&nbsp;&nbsp;
+                    权限:&nbsp;&nbsp;&nbsp;
                     <strong>{bucketInfo?.access || ""}</strong>
                   </span>
                   {bucketInfo && (
@@ -1371,7 +1371,7 @@ const ListObjects = () => {
                         {bucketInfo.size && bucketInfo.objects ? " - " : ""}
                         {bucketInfo.objects && (
                           <Fragment>
-                            {bucketInfo.objects}&nbsp;Object
+                            {bucketInfo.objects}&nbsp;对象
                             {bucketInfo.objects && bucketInfo.objects !== 1
                               ? "s"
                               : ""}
